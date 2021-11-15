@@ -35,3 +35,10 @@ In the web system for Nepal Police Clearance Online Regsitration, there were thr
 - Developed character level Bidirectional LSTM model for catching the profanity in Name, Middle name and Surname Field. The data for name or not name classification was developed. This data collection contains generally Nepalese names and Nepalese profane words. 
 - Developed another simple LSTM model for classifying given description is profane or not using the GLOVE embedding for embedding matrix. 
 
+## How to use this AI service
+Simple . We have already created Dockerfiles for this system. Just use this Dockerfiles in your server or local system and this API service will be running at port 8041 in the system. 
+Use this commands 
+- docker-compose build
+- docker-compose up -d
+The API service will be running at port 8041. Use this service in the backend of your system to check whether the image uploaded is valid or not and whether the description and name given by user in the form is profane or not. 
+* One may have to modify the api script according the web backedn developed.
